@@ -1,0 +1,23 @@
+{
+  "creator": "tyler58546",
+  "release_notes": {
+    "neutral": {
+      "LastUpdate": "",
+      "OlderHistory": ""
+    }
+  },
+  "title": "Project Mega Pack A330 FBW A32NX Compatibility Mod",
+  "dependencies": [
+    {
+      "package_version": "0.1.0",
+      "name": "PMP_A330_300"
+    },
+    {
+      "package_version": "0.6.0",
+      "name": "A32NX"
+    }
+  ],
+  "content_type": "AIRCRAFT",
+  "minimum_game_version": "1.9.5",
+  "manufacturer": "Airbus"
+}
