@@ -11,7 +11,6 @@ Report any issues you find with this mod [here](https://github.com/tyler58546/pm
 3. Drag and drop into community folder
 
 ## Known Issues
-* Radio management panel (RMP) does not work (use the ATC panel instead for now)
 * EFB is missing
 * Printer does not work
 * Some cockpit sounds are missing
