@@ -301,8 +301,8 @@ const vfeFS = [
     240 // Config 1
 ];
 
-const Vmo = 350;
-const Mmo = 0.82;
+const Vmo = 330;
+const Mmo = 0.86;
 
 /**
  * Correct input function for cg
