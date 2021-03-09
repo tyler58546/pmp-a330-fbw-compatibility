@@ -51,9 +51,7 @@ class A32NX_RMP_Logic extends BaseInstrument {
 
     Update() {
         super.Update();
-        if (this.CanUpdate()) {
-            this.dispatchEvent(new CustomEvent('update', { detail: this.getDeltaTime() }));
-        }
+        this.dispatchEvent(new CustomEvent('update', { detail: this.getDeltaTime() }));
     }
 
     onInteractionEvent(event) {
