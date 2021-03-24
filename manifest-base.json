@@ -15,6 +15,10 @@
     {
       "package_version": "0.6.0",
       "name": "A32NX"
+    },
+    {
+      "package_version": "0.6.0",
+      "name": "flybywire-aircraft-a320-neo"
     }
   ],
   "content_type": "AIRCRAFT",
