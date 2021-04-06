@@ -1,9 +1,9 @@
 {
   "name": "pmp-a330-fbw-compatibility",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "author": "tyler58546",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
