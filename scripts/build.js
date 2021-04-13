@@ -4,6 +4,12 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const path = require('path');
 
+const packageDir = path.resolve(__dirname, '..', 'z_pmp-a330-fbw-compatibility');
+
+fse.copySync(path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300'), path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300P2F'));
+fse.removeSync(path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300P2F', 'sound'));
+fse.removeSync(path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300P2F', 'TEXTURE.DEFAULT'));
+
 function* readdir(d) {
     for (const dirent of fs.readdirSync(d, { withFileTypes: true })) {
         if (['layout.json', 'manifest.json'].includes(dirent.name)) {
@@ -19,7 +25,6 @@ function* readdir(d) {
 }
 
 const MS_FILETIME_EPOCH = 116444736000000000n;
-const packageDir = path.resolve(__dirname, '..', 'z_pmp-a330-fbw-compatibility');
 
 const contentEntries = [];
 let totalPackageSize = 0;
@@ -43,5 +48,3 @@ fs.writeFileSync(path.join(packageDir, 'manifest.json'), JSON.stringify({
     package_version: require('../package.json').version,
     total_package_size: totalPackageSize.toString().padStart(20, '0'),
 }, null, 2));
-
-fse.copySync(path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300'), path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300P2F'));
