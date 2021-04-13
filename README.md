@@ -13,7 +13,6 @@ Report any issues you find with this mod [here](https://github.com/tyler58546/pm
 ## Known Issues
 * EFB is missing
 * Printer does not work
-* Some cockpit sounds are missing
 
 ## License
 The Project Mega Pack A330 FBW A32NX Compatibility Mod is released under the MIT License.
