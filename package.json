@@ -5,5 +5,8 @@
   "main": "index.js",
   "scripts": {},
   "author": "tyler58546",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  }
 }
