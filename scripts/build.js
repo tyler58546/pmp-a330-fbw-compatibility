@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const fse = require('fs-extra');
 const path = require('path');
 
 function* readdir(d) {
@@ -42,3 +43,5 @@ fs.writeFileSync(path.join(packageDir, 'manifest.json'), JSON.stringify({
     package_version: require('../package.json').version,
     total_package_size: totalPackageSize.toString().padStart(20, '0'),
 }, null, 2));
+
+fse.copySync(path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300'), path.resolve(packageDir, 'SimObjects', 'Airplanes', 'amp-airbus-a330-300P2F'));
