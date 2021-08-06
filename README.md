@@ -5,7 +5,7 @@
 
 Report any issues you find with this mod [here](https://github.com/tyler58546/pmp-a330-fbw-compatibility/issues).
 ## Installation
-1. Install the A32NX mod (development version)
+1. Install the A32NX mod (stable version)
 2. Install the Project Mega Pack A330
 2. Download the latest release from [here](https://github.com/tyler58546/pmp-a330-fbw-compatibility/releases).
 3. Drag and drop into community folder
@@ -13,6 +13,7 @@ Report any issues you find with this mod [here](https://github.com/tyler58546/pm
 ## Known Issues
 * EFB is missing
 * Printer does not work
+* Incompatible with the development version of A32NX
 
 ## License
 The Project Mega Pack A330 FBW A32NX Compatibility Mod is released under the MIT License.
